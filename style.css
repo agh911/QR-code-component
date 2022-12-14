@@ -33,31 +33,30 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 280px;
+    max-width: min-content;
     background-color: var(--white);
     border-radius: 15px;
     box-shadow: rgba(31, 50, 81, 0.15) 0px 8px 24px;
+    padding: 20px;
 }
 
 .qr-image {
-    background-image: url(images/image-qr-code.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    max-width: 100%;
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    margin-top: 15px;
 }
 
-h3, p {
+h1, p {
     font-family: 'Outfit', sans-serif;
     text-align: center;
 }
 
-h3 {
+h1 {
     font-weight: 700;
     color: var(--dark-blue);
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 p {
@@ -68,7 +67,7 @@ p {
 }
 
 .description {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .attribution {
@@ -78,10 +77,4 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-@media only screen and (max-width: 600px) {
-    main {
-        margin: 40% 0;
-    }
 }
